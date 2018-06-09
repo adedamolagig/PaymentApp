@@ -1,0 +1,51 @@
+
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+.navbar-laravel {
+	border-width: 1px;
+  border-radius: 55px;
+  box-shadow: 0 2px 4px rgba(247, 242, 247, 100);
+}
+
+body{
+	background-image: url("/images/drop-of-water-green-hd-wallpaper-48600.jpg");
+	background-color: #494a4b
+}
+
+.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+}
+
+.example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+}
+
+.example button:hover {
+    background: #0b7dda;
+}
+
+.example::after {
+    content: "";
+    clear: both;
+    display: table;
+}
