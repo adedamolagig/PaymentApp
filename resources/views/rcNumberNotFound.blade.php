@@ -125,6 +125,20 @@
                         </div>
 
                         <div class="form-group row">
+                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('Vendor Name*') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="vendor_name" type="vendor_name" class="form-control{{ $errors->has('vendor_name') ? ' is-invalid' : '' }}" name="vendor_name" value="{{ old('vendor_name') }}" required>
+
+                                @if ($errors->has('vendor_name'))
+                                    <span class="invalid-feedback">
+                                        <strong>{{ $errors->first('vendor_name') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+                        
+                        <div class="form-group row">
                             <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
 
                             <div class="col-md-6">
